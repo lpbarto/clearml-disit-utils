@@ -10,7 +10,7 @@ services:
     working_dir: /var/www/html
     volumes:
       - .:/var/www/html
-      - /path/to/host/database:/var/www/html/database
+      - /home/ubuntu/clearmldisitdb:/var/www/html/database
     networks:
       - laravel
 
