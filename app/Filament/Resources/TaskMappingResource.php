@@ -17,7 +17,7 @@ class TaskMappingResource extends Resource
 {
     protected static ?string $model = TaskMapping::class;
 
-    protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
+    protected static ?string $navigationIcon = 'heroicon-o-queue-list';
 
     public static function form(Form $form): Form
     {
