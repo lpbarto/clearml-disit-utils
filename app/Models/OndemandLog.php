@@ -18,4 +18,8 @@ class OndemandLog extends Model
         'details',
         'created_at',
     ];
+
+    protected $casts = [
+        'status' => 'boolean'
+    ];
 }

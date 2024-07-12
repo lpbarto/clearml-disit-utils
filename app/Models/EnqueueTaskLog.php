@@ -18,5 +18,8 @@ class EnqueueTaskLog extends Model
         'created_at',
     ];
 
+    protected $casts = [
+        'status' => 'boolean'
+    ];
 
 }
