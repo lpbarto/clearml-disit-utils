@@ -14,6 +14,7 @@ class TaskMapping extends Model
     protected $fillable = [
         'hashed_task_id',
         'task_id',
+        'default_queue',
         'description',
     ];
 }

@@ -29,7 +29,7 @@ class ServingMachineMappingResource extends Resource
                 Forms\Components\TextInput::make('serving_machine_task_id')
                     ->label('Serving Machine Task ID')
                     ->required()
-                    ->unique(),
+                    ->unique(ignoreRecord: true),
                 Forms\Components\TextInput::make('base_url')
                     ->url()
                     ->required()
@@ -47,7 +47,8 @@ class ServingMachineMappingResource extends Resource
             ->columns([
                 Tables\Columns\TextColumn::make('serving_machine_task_id'),
                 Tables\Columns\TextColumn::make('base_url'),
-                Tables\Columns\TextColumn::make('description'),
+                Tables\Columns\TextColumn::make('description')
+                    ->limit(30),
             ])
             ->filters([
                 //

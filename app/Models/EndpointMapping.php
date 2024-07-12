@@ -9,7 +9,7 @@ class EndpointMapping extends Model
 {
     use HasFactory;
 
-    protected $table = 'machine_mappings';
+    protected $table = 'endpoint_mappings';
 
     protected $fillable = [
         'serving_machine_task_id',

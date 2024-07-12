@@ -50,8 +50,10 @@ class EndpointMappingResource extends Resource
             ->columns([
                 Tables\Columns\TextColumn::make('serving_machine_task_id'),
                 Tables\Columns\TextColumn::make('endpoint'),
-                Tables\Columns\TextColumn::make('hashed_machine_id'),
-                Tables\Columns\TextColumn::make('description'),
+                Tables\Columns\TextColumn::make('hashed_machine_id')
+                    ->limit(30),
+                Tables\Columns\TextColumn::make('description')
+                    ->limit(20),
             ])
             ->filters([
                 //

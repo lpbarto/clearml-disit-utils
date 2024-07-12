@@ -6,6 +6,7 @@ use App\Filament\Resources\TaskMappingResource\Pages;
 use App\Filament\Resources\TaskMappingResource\RelationManagers;
 use App\Models\TaskMapping;
 use Filament\Forms;
+use Filament\Forms\Components\Actions\Action;
 use Filament\Forms\Form;
 use Filament\Resources\Resource;
 use Filament\Tables;
@@ -29,13 +30,16 @@ class TaskMappingResource extends Resource
                 Forms\Components\TextInput::make('task_id')
                     ->label('Task ID')
                     ->required()
-                    ->unique()
+                    ->unique(ignoreRecord: true)
                     ->disabledOn('edit'),
                 Forms\Components\TextInput::make('hashed_task_id')
                     ->label('Hashed Task ID')
                     ->hint('Id pubblico da utilizzare per identificare il task')
                     ->hiddenOn('create')
                     ->disabledOn('edit'),
+                Forms\Components\TextInput::make('default_queue')
+                    ->label('Nome Coda di Default')
+                    ->required(),
                 Forms\Components\TextInput::make('description')
                     ->label('Descrizione'),
             ]);
@@ -45,9 +49,12 @@ class TaskMappingResource extends Resource
     {
         return $table
             ->columns([
-                Tables\Columns\TextColumn::make('hashed_task_id'),
+                Tables\Columns\TextColumn::make('hashed_task_id')
+                    ->limit(30),
                 Tables\Columns\TextColumn::make('task_id'),
-                Tables\Columns\TextColumn::make('description'),
+                Tables\Columns\TextColumn::make('default_queue'),
+                Tables\Columns\TextColumn::make('description')
+                    ->limit(20),
             ])
             ->filters([
                 //
