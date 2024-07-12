@@ -172,6 +172,8 @@ class ComposerStaticInit7e8c3c14ff33b199b4a0838993eb8423
         'F' => 
         array (
             'Fruitcake\\Cors\\' => 15,
+            'Flowframe\\Trend\\Database\\Factories\\' => 35,
+            'Flowframe\\Trend\\' => 16,
             'Filament\\Widgets\\' => 17,
             'Filament\\Tables\\' => 16,
             'Filament\\Support\\' => 17,
@@ -465,8 +467,8 @@ class ComposerStaticInit7e8c3c14ff33b199b4a0838993eb8423
         ),
         'League\\Uri\\' => 
         array (
-            0 => __DIR__ . '/..' . '/league/uri-interfaces',
-            1 => __DIR__ . '/..' . '/league/uri',
+            0 => __DIR__ . '/..' . '/league/uri',
+            1 => __DIR__ . '/..' . '/league/uri-interfaces',
         ),
         'League\\MimeTypeDetection\\' => 
         array (
@@ -545,6 +547,14 @@ class ComposerStaticInit7e8c3c14ff33b199b4a0838993eb8423
         'Fruitcake\\Cors\\' => 
         array (
             0 => __DIR__ . '/..' . '/fruitcake/php-cors/src',
+        ),
+        'Flowframe\\Trend\\Database\\Factories\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/flowframe/laravel-trend/database/factories',
+        ),
+        'Flowframe\\Trend\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/flowframe/laravel-trend/src',
         ),
         'Filament\\Widgets\\' => 
         array (
@@ -682,9 +692,41 @@ class ComposerStaticInit7e8c3c14ff33b199b4a0838993eb8423
         'AnourValar\\EloquentSerialize\\Grammars\\QueryBuilderGrammar' => __DIR__ . '/..' . '/anourvalar/eloquent-serialize/src/Grammars/QueryBuilderGrammar.php',
         'AnourValar\\EloquentSerialize\\Package' => __DIR__ . '/..' . '/anourvalar/eloquent-serialize/src/Package.php',
         'AnourValar\\EloquentSerialize\\Service' => __DIR__ . '/..' . '/anourvalar/eloquent-serialize/src/Service.php',
+        'App\\Filament\\Auth\\CustomEditProfile' => __DIR__ . '/../..' . '/app/Filament/Auth/CustomEditProfile.php',
+        'App\\Filament\\Auth\\CustomLogin' => __DIR__ . '/../..' . '/app/Filament/Auth/CustomLogin.php',
+        'App\\Filament\\Resources\\EndpointMappingResource' => __DIR__ . '/../..' . '/app/Filament/Resources/EndpointMappingResource.php',
+        'App\\Filament\\Resources\\EndpointMappingResource\\Pages\\CreateEndpointMapping' => __DIR__ . '/../..' . '/app/Filament/Resources/EndpointMappingResource/Pages/CreateEndpointMapping.php',
+        'App\\Filament\\Resources\\EndpointMappingResource\\Pages\\EditEndpointMapping' => __DIR__ . '/../..' . '/app/Filament/Resources/EndpointMappingResource/Pages/EditEndpointMapping.php',
+        'App\\Filament\\Resources\\EndpointMappingResource\\Pages\\ListEndpointMappings' => __DIR__ . '/../..' . '/app/Filament/Resources/EndpointMappingResource/Pages/ListEndpointMappings.php',
+        'App\\Filament\\Resources\\EnqueueTaskLogResource' => __DIR__ . '/../..' . '/app/Filament/Resources/EnqueueTaskLogResource.php',
+        'App\\Filament\\Resources\\EnqueueTaskLogResource\\Pages\\CreateEnqueueTaskLog' => __DIR__ . '/../..' . '/app/Filament/Resources/EnqueueTaskLogResource/Pages/CreateEnqueueTaskLog.php',
+        'App\\Filament\\Resources\\EnqueueTaskLogResource\\Pages\\EditEnqueueTaskLog' => __DIR__ . '/../..' . '/app/Filament/Resources/EnqueueTaskLogResource/Pages/EditEnqueueTaskLog.php',
+        'App\\Filament\\Resources\\EnqueueTaskLogResource\\Pages\\ListEnqueueTaskLogs' => __DIR__ . '/../..' . '/app/Filament/Resources/EnqueueTaskLogResource/Pages/ListEnqueueTaskLogs.php',
+        'App\\Filament\\Resources\\EnqueueTaskLogResource\\Pages\\ViewEnqueueTaskLog' => __DIR__ . '/../..' . '/app/Filament/Resources/EnqueueTaskLogResource/Pages/ViewEnqueueTaskLog.php',
+        'App\\Filament\\Resources\\OndemandLogResource' => __DIR__ . '/../..' . '/app/Filament/Resources/OndemandLogResource.php',
+        'App\\Filament\\Resources\\OndemandLogResource\\Pages\\CreateOndemandLog' => __DIR__ . '/../..' . '/app/Filament/Resources/OndemandLogResource/Pages/CreateOndemandLog.php',
+        'App\\Filament\\Resources\\OndemandLogResource\\Pages\\EditOndemandLog' => __DIR__ . '/../..' . '/app/Filament/Resources/OndemandLogResource/Pages/EditOndemandLog.php',
+        'App\\Filament\\Resources\\OndemandLogResource\\Pages\\ListOndemandLogs' => __DIR__ . '/../..' . '/app/Filament/Resources/OndemandLogResource/Pages/ListOndemandLogs.php',
+        'App\\Filament\\Resources\\OndemandLogResource\\Pages\\ViewOndemandLog' => __DIR__ . '/../..' . '/app/Filament/Resources/OndemandLogResource/Pages/ViewOndemandLog.php',
+        'App\\Filament\\Resources\\ServingMachineMappingResource' => __DIR__ . '/../..' . '/app/Filament/Resources/ServingMachineMappingResource.php',
+        'App\\Filament\\Resources\\ServingMachineMappingResource\\Pages\\CreateServingMachineMapping' => __DIR__ . '/../..' . '/app/Filament/Resources/ServingMachineMappingResource/Pages/CreateServingMachineMapping.php',
+        'App\\Filament\\Resources\\ServingMachineMappingResource\\Pages\\EditServingMachineMapping' => __DIR__ . '/../..' . '/app/Filament/Resources/ServingMachineMappingResource/Pages/EditServingMachineMapping.php',
+        'App\\Filament\\Resources\\ServingMachineMappingResource\\Pages\\ListServingMachineMappings' => __DIR__ . '/../..' . '/app/Filament/Resources/ServingMachineMappingResource/Pages/ListServingMachineMappings.php',
+        'App\\Filament\\Resources\\TaskMappingResource' => __DIR__ . '/../..' . '/app/Filament/Resources/TaskMappingResource.php',
+        'App\\Filament\\Resources\\TaskMappingResource\\Pages\\CreateTaskMapping' => __DIR__ . '/../..' . '/app/Filament/Resources/TaskMappingResource/Pages/CreateTaskMapping.php',
+        'App\\Filament\\Resources\\TaskMappingResource\\Pages\\EditTaskMapping' => __DIR__ . '/../..' . '/app/Filament/Resources/TaskMappingResource/Pages/EditTaskMapping.php',
+        'App\\Filament\\Resources\\TaskMappingResource\\Pages\\ListTaskMappings' => __DIR__ . '/../..' . '/app/Filament/Resources/TaskMappingResource/Pages/ListTaskMappings.php',
+        'App\\Filament\\Widgets\\LogsChart' => __DIR__ . '/../..' . '/app/Filament/Widgets/LogsChart.php',
+        'App\\Filament\\Widgets\\StatsOverview' => __DIR__ . '/../..' . '/app/Filament/Widgets/StatsOverview.php',
         'App\\Http\\Controllers\\Controller' => __DIR__ . '/../..' . '/app/Http/Controllers/Controller.php',
+        'App\\Models\\EndpointMapping' => __DIR__ . '/../..' . '/app/Models/EndpointMapping.php',
+        'App\\Models\\EnqueueTaskLog' => __DIR__ . '/../..' . '/app/Models/EnqueueTaskLog.php',
+        'App\\Models\\OndemandLog' => __DIR__ . '/../..' . '/app/Models/OndemandLog.php',
+        'App\\Models\\ServingMachineMapping' => __DIR__ . '/../..' . '/app/Models/ServingMachineMapping.php',
+        'App\\Models\\TaskMapping' => __DIR__ . '/../..' . '/app/Models/TaskMapping.php',
         'App\\Models\\User' => __DIR__ . '/../..' . '/app/Models/User.php',
         'App\\Providers\\AppServiceProvider' => __DIR__ . '/../..' . '/app/Providers/AppServiceProvider.php',
+        'App\\Providers\\Filament\\AppPanelProvider' => __DIR__ . '/../..' . '/app/Providers/Filament/AppPanelProvider.php',
         'Attribute' => __DIR__ . '/..' . '/symfony/polyfill-php80/Resources/stubs/Attribute.php',
         'BladeUI\\Heroicons\\BladeHeroiconsServiceProvider' => __DIR__ . '/..' . '/blade-ui-kit/blade-heroicons/src/BladeHeroiconsServiceProvider.php',
         'BladeUI\\Icons\\BladeIconsServiceProvider' => __DIR__ . '/..' . '/blade-ui-kit/blade-icons/src/BladeIconsServiceProvider.php',
@@ -2776,6 +2818,13 @@ class ComposerStaticInit7e8c3c14ff33b199b4a0838993eb8423
         'Filament\\Widgets\\Widget' => __DIR__ . '/..' . '/filament/widgets/src/Widget.php',
         'Filament\\Widgets\\WidgetConfiguration' => __DIR__ . '/..' . '/filament/widgets/src/WidgetConfiguration.php',
         'Filament\\Widgets\\WidgetsServiceProvider' => __DIR__ . '/..' . '/filament/widgets/src/WidgetsServiceProvider.php',
+        'Flowframe\\Trend\\Adapters\\AbstractAdapter' => __DIR__ . '/..' . '/flowframe/laravel-trend/src/Adapters/AbstractAdapter.php',
+        'Flowframe\\Trend\\Adapters\\MySqlAdapter' => __DIR__ . '/..' . '/flowframe/laravel-trend/src/Adapters/MySqlAdapter.php',
+        'Flowframe\\Trend\\Adapters\\PgsqlAdapter' => __DIR__ . '/..' . '/flowframe/laravel-trend/src/Adapters/PgsqlAdapter.php',
+        'Flowframe\\Trend\\Adapters\\SqliteAdapter' => __DIR__ . '/..' . '/flowframe/laravel-trend/src/Adapters/SqliteAdapter.php',
+        'Flowframe\\Trend\\Trend' => __DIR__ . '/..' . '/flowframe/laravel-trend/src/Trend.php',
+        'Flowframe\\Trend\\TrendServiceProvider' => __DIR__ . '/..' . '/flowframe/laravel-trend/src/TrendServiceProvider.php',
+        'Flowframe\\Trend\\TrendValue' => __DIR__ . '/..' . '/flowframe/laravel-trend/src/TrendValue.php',
         'Fruitcake\\Cors\\CorsService' => __DIR__ . '/..' . '/fruitcake/php-cors/src/CorsService.php',
         'Fruitcake\\Cors\\Exceptions\\InvalidOptionException' => __DIR__ . '/..' . '/fruitcake/php-cors/src/Exceptions/InvalidOptionException.php',
         'GrahamCampbell\\ResultType\\Error' => __DIR__ . '/..' . '/graham-campbell/result-type/src/Error.php',

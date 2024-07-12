@@ -9,6 +9,8 @@ class TaskMapping extends Model
 {
     use HasFactory;
 
+    protected $table = 'task_mappings';
+
     protected $fillable = [
         'hashed_task_id',
         'task_id',

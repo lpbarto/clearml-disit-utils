@@ -9,6 +9,8 @@ class OndemandLog extends Model
 {
     use HasFactory;
 
+    protected $table = 'ondemand_logs';
+
     protected $fillable = [
         'serving_machine_task_id',
         'endpoint',
