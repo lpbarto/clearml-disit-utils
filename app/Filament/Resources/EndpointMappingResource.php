@@ -19,6 +19,9 @@ class EndpointMappingResource extends Resource
 
     protected static ?string $navigationIcon = 'heroicon-o-link';
 
+    protected static ?int $navigationSort = 2;
+
+
     public static function form(Form $form): Form
     {
         return $form
